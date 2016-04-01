@@ -4,40 +4,193 @@
       <meta charset="utf-8">
       <title>cv Pascal Moriceau</title>
       <link rel="stylesheet" href="style.css"/>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script> 
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script> 
     </head>
 <body>
     
     <header>
-       <div class="image">
-        <img src="photo.jpg" height="150" width="150">
-       </div> 
-           <div class="entete">
+       <div class="row">
+            <div class="image col-md-6">
+              <img src="img/photo.jpg" height="150" width="150">  
+            </div>
+            <div class="entete col-md-6">
               <h1><em>Moriceau Pascal</em></h1>
               <h3><strong><em>Chef de projet</em></strong></h3>
-           </div>       
+            </div> 
+       </div>
+     
     </header>
       
   <main>
-      <div id="conteneur">
-              <div class="element"> 
+  <div class="row">
+      <div class="col-md-4">
+            <div class="conteneur">
                 <h2>Parcours</h2>         
                 <p>Je suis passé du commerce à la restauration, </br>
                 maintenant, devenir developpeur pour</br> 
                 continuer à ne pas avoir de vie.</p></br>
-              </div>
-              <div class="element">
+            </div>
+      </div>
+           
+      <div class="col-md-4">
+            <div class="conteneur">
                 <h2>Ambitions</h2>             
                 <p>Apprendre, apprendre et encore</br> 
                 apprendre pour devenir un bon </br> 
                 developpeur et travailler dans ce domaine.</p></br>
-              </div>
-              <div class="element">
+            </div>
+      </div>
+              
+      <div class="col-md-4">
+            <div class="conteneur">
                 <h2>Experiences</h2>
                 <p>Directeur adjoint De Restaurant.</br>
                 Gerant de restaurant.</br>
                 Serveur restaurant.</p></br>
+            </div>
+       </div>
+  </div>
+  
+  
+  <div class="container">    
+            <h2>Mon portfolio</h2>
+            <ul id="filters" class="clearfix row">
+                <li><span class="filter active" data-filter="cat1 cat2 cat3 cat4">Toutes mes catégories</span></li>
+                <li><span class="filter" data-filter="cat1">HTML/CSS</span></li>
+                <li><span class="filter" data-filter="cat2">Javascript</span></li>
+                <li><span class="filter" data-filter="cat3">Bootstrap</span></li>
+                <li><span class="filter" data-filter="cat4">Ruby</span></li>
+            </ul>
+        
+  
+        <div id="portfoliolist">
+             <div class="row">
+               <div class="col-md-3"> 
+                <div class="portfolio cat2" data-cat="cat2">
+                    <div class="portfolio-wrapper">             
+                        <img src="img/annuaire.jpeg" alt="" />
+                        <div class="label">
+                            <div class="label-text">
+                                <a class="text-title">Annuaire</a>
+                                <span class="text-category">Javascript</span>
+                            </div>
+                            <div class="label-bg"></div>
+                        </div>
+                    </div>
+                </div> 
               </div>
-       </div>     
+              
+               <div class="col-md-3">
+                <div class="portfolio cat1" data-cat="cat1">
+                    <div class="portfolio-wrapper">         
+                        <img src="img/pascal.png" alt="" />
+                        <div class="label">
+                            <div class="label-text">
+                                <a class="text-title">Titre de mon projet HTML/CSS</a>
+                                <span class="text-category">HTML/CSS</span>
+                            </div>
+                            <div class="label-bg"></div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+                            
+               <div class="col-md-3"> 
+                <div class="portfolio cat4" data-cat="cat4">
+                    <div class="portfolio-wrapper">         
+                        <img src="img/soleil.jpg" alt="" />
+                        <div class="label">
+                            <div class="label-text">
+                                <a class="text-title">API Open Food Facts</a>
+                                <span class="text-category">Ruby</span>
+                            </div>
+                            <div class="label-bg"></div>
+                        </div>
+                    </div>
+                </div> 
+               </div>
+              
+               <div class="col-md-3">             
+                <div class="portfolio cat1" data-cat="cat1">
+                    <div class="portfolio-wrapper">
+                        <img src="img/star-wars.jpg" alt="" />
+                        <div class="label">
+                            <div class="label-text">
+                                <a class="text-title">Page de profil</a>
+                                <span class="text-category">HTML/CSS</span>
+                            </div>
+                            <div class="label-bg"></div>
+                        </div>
+                    </div>
+                </div>          
+               </div>
+             </div>
+            
+        <div class="row">
+            <div class="col-md-3"> 
+                <div class="portfolio cat2" data-cat="cat2">
+                    <div class="portfolio-wrapper">         
+                        <img src="img/badges.JPG" alt="" />
+                        <div class="label">
+                            <div class="label-text">
+                                <a class="text-title">Titre de mon projet en Javascript</a>
+                                <span class="text-category">Javascript</span>
+                            </div>
+                            <div class="label-bg"></div>
+                        </div>
+                    </div>
+                </div>                                                                                                                                                          
+            </div>
+            
+            <div class="col-md-3"> 
+                <div class="portfolio cat1" data-cat="cat1">
+                    <div class="portfolio-wrapper">         
+                        <img src="img/foot.png" alt="" />
+                        <div class="label">
+                            <div class="label-text">
+                                <a class="text-title">Page placement div</a>
+                                <span class="text-category">HTML/CSS</span>
+                            </div>
+                            <div class="label-bg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="col-md-3">     
+                <div class="portfolio cat4" data-cat="cat4">
+                    <div class="portfolio-wrapper">         
+                        <img src="img/moonwalk.jpeg" alt="" />
+                        <div class="label">
+                            <div class="label-text">
+                                <a class="text-title">Exercice en Ruby</a>
+                                <span class="text-category">Ruby</span>
+                            </div>
+                            <div class="label-bg"></div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+                                                                                         
+            <div class="col-md-3"> 
+                <div class="portfolio cat3" data-cat="cat3">
+                    <div class="portfolio-wrapper">         
+                        <img src="img/tonton.png" alt="" />
+                        <div class="label">
+                            <div class="label-text">
+                                <a class="text-title">Exercice utilisation Bootstrap</a>
+                                <span class="text-category">Bootstrap</span>
+                            </div>
+                            <div class="label-bg"></div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
     </main>
          
     <footer>
